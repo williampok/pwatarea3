@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Desplegable</title>
+  <style>
+    /* Estilos CSS para el menú */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #643333;
+      margin: 0;
+      padding: 0;
+    
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      
+    }
+
+    li {
+      float: left;
+      position: relative;
+    }
+
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #555;
+    }
+
+    ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 200px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #555;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    ul ul li {
+      float: none;
+      position: relative;
+    }
+
+    ul ul a {
+      padding: 12px;
+      color: white;
+      display: block;
+      text-decoration: none;
+    }
+
+    ul ul a:hover {
+      background-color: #666;
+    }
+
+    li:hover > ul {
+      display: block;
+    }
+
+    /* Estilo para la barra de navegación en dispositivos pequeños */
+    @media screen and (max-width: 600px) {
+      ul {
+        display: block;
+        width: 100%;
+      }
+
+      li {
+        width: 100%;
+        text-align: center;
+      }
+
+      ul ul {
+        width: 100%;
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Estructura HTML del menú -->
+<ul>
+  <li><a href="Ej01.html">Inicio</a></li>
+  <li>
+    <a href="#">Ejercicios</a>
+    <ul>
+      <li><a href="/TareaPractica3-William Mateo/Eje02/Ej02.html">Ejercicio 2</a></li>
+      <li><a href="/TareaPractica3-William Mateo/Eje03/Ej03.php">Ejercicio 3</a></li>
+      <li><a href="/TareaPractica3-William Mateo/Eje04/index.php">Ejercicio 4</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Servicios</a>
+    <ul>
+      <li><a href="/TareaPractica3-William Mateo/Eje05/Ej05.php">Galeria de imagenes</a></li>
+      <li><a href="#">Servicio 2</a></li>
+      <li><a href="#">Servicio 3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Contacto</a></li>
+</ul>
+
+</body>
+</html>
